@@ -2,7 +2,8 @@
 
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Typing from 'react-typing-animation';
+import Typing, { Backspace, Delay, Reset, Speed } from 'react-typing-animation';
+import collage from '../images/collage3.png';
 
 
 class FullDesign extends Component {
@@ -18,11 +19,49 @@ class FullDesign extends Component {
 
   render() {
     return (<div>
+      <Menu />
       <FirstArea />
     </div>);
   }
 
 
+}
+
+
+class Menu extends Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount(){
+      
+  }
+
+
+  render() {
+    return (
+      <div>
+        <div className="topnav" id="myTopnav">
+          <a href="#home" className="active">Home</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+          <a className="icon" onclick={this.myFunction()}>
+            <i className="fa fa-bars"></i>
+          </a>
+        </div>
+    </div>);
+  }
+
+  navigationClick(){
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
 }
 
 
@@ -38,23 +77,44 @@ class FirstArea extends Component {
 
 
   render() {
-  	return (<div>
-  		<div className="col-sm-12 col-xs-12 main-div">
-  			<div className="col-sm-12 col-xs-12 welcome-text">
-  				<h1>Hello, I am D S Aman</h1>
-  				<TypingAnimation />
-  			</div>
-  			<div className="col-sm-6 col-sm-offset-3 col-xs-12 input-box-div">
-  				<div className="subtext-enter-code">
-  					Type help to get the list of syntax
-  				</div>
-  			</div>
-  			<div id="content_div" className="col-sm-12 col-xs-12 content-div">
-  			</div>
+  	return (<div className="self-intro-div">
+      <div className="col-sm-7 col-xs-12 image-div">
+        <ImageDiv />
+      </div>
+  		<div className="col-sm-5 col-xs-12 animated-text">
+        <h1 className="hello-text">
+          Hello, I am D S Aman
+        </h1>
+        <div class="break"></div>
+        <h2 className="changing-text">
+          <span>I am an </span>
+    			<TypingAnimation />
+        </h2>
   		</div>
   	</div>);
   }
 }
+
+
+class ImageDiv extends Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount(){
+      
+  }
+
+
+  render() {
+    return (
+      <div>
+        <img src={collage} className="collage-image"/>
+    </div>);
+  }
+}
+
 
 class TypingAnimation extends Component {
 
@@ -69,25 +129,19 @@ class TypingAnimation extends Component {
 
   render() {
     return (<Typing>
-      <div>
-      There will be a 1000ms delay here,
-      <Typing.Delay ms={1000} />
-      then this will be typed.
+    <div>
+      Entrepreneuer
+      <Backspace count={13} delay={750} />
+      <Typing.Delay ms={500} />
+      Coder
+      <Backspace count={5} delay={750} />
+      <Typing.Delay ms={500} />
+      Teacher
     </div>
     </Typing>);
   }
 }
 
-
-
-class HelpBoxText extends Component {
-
-	render() {
-		return (<div className="col-sm-8 col-sm-offset-2 col-xs-12 output-screen">
-			</div>);
-	}
-
-}
 
 
 
