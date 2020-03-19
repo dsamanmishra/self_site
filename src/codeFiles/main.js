@@ -4,6 +4,12 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Typing, { Backspace, Delay, Reset, Speed } from 'react-typing-animation';
 import collage from '../images/collage3.png';
+import mic from '../images/mic.png';
+import scuba from '../images/scuba_image.JPG';
+
+
+//https://colorlib.com/wp/template/me/
+//https://colorlib.com/wp/cat/personal/
 
 
 class FullDesign extends Component {
@@ -42,25 +48,25 @@ class Menu extends Component {
   render() {
     return (
       <div>
-        <div className="topnav" id="myTopnav">
+        <div className="topnav">
+          <a href="#news">Know Me A Little</a>
+          <a href="#contact">What I Do</a>
           <a href="#home" className="active">Home</a>
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
-          <a className="icon" onclick={this.myFunction()}>
-            <i className="fa fa-bars"></i>
-          </a>
+          <a href="#search">What Makes Me Different</a>
+          <a href="#about">Things I Write</a>
         </div>
     </div>);
   }
 
   navigationClick(){
     var x = document.getElementById("myTopnav");
+    /*
     if (x.className === "topnav") {
       x.className += " responsive";
     } else {
       x.className = "topnav";
     }
+    */
   }
 }
 
@@ -78,19 +84,18 @@ class FirstArea extends Component {
 
   render() {
   	return (<div className="self-intro-div">
-      <div className="col-sm-7 col-xs-12 image-div">
-        <ImageDiv />
-      </div>
   		<div className="col-sm-5 col-xs-12 animated-text">
-        <h1 className="hello-text">
-          Hello, I am D S Aman
+        <h1 className="hello-text" align="center">
+          Hey There, I'm D S Aman
         </h1>
         <div class="break"></div>
         <h2 className="changing-text">
-          <span>I am an </span>
     			<TypingAnimation />
         </h2>
   		</div>
+      <div className="col-sm-7 col-xs-12 image-div">
+        <ImageDiv />
+      </div>
   	</div>);
   }
 }
@@ -114,6 +119,7 @@ class ImageDiv extends Component {
     </div>);
   }
 }
+// <img src={mic} className="mic-image"/>
 
 
 class TypingAnimation extends Component {
@@ -128,15 +134,18 @@ class TypingAnimation extends Component {
 
 
   render() {
-    return (<Typing>
+    return (<Typing className="animated-words">
     <div>
-      Entrepreneuer
-      <Backspace count={13} delay={750} />
+      An Entrepreneuer
+      <Backspace count={16} delay={750} />
       <Typing.Delay ms={500} />
-      Coder
-      <Backspace count={5} delay={750} />
+      A Coder
+      <Backspace count={7} delay={750} />
       <Typing.Delay ms={500} />
-      Teacher
+      A Blogger
+      <Backspace count={9} delay={750} />
+      <Typing.Delay ms={500} />
+      A Teacher
     </div>
     </Typing>);
   }
