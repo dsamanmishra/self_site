@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import Typing from 'react-typing-animation';
 
 
 class FullDesign extends Component {
@@ -41,7 +42,7 @@ class FirstArea extends Component {
   		<div className="col-sm-12 col-xs-12 main-div">
   			<div className="col-sm-12 col-xs-12 welcome-text">
   				<h1>Hello, I am D S Aman</h1>
-  				<h3 className="welcome-sub-text">A Home That Only Worthy Techies Can Access</h3>
+  				<TypingAnimation />
   			</div>
   			<div className="col-sm-6 col-sm-offset-3 col-xs-12 input-box-div">
   				<div className="subtext-enter-code">
@@ -53,8 +54,28 @@ class FirstArea extends Component {
   		</div>
   	</div>);
   }
+}
+
+class TypingAnimation extends Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount(){
+      
+  }
 
 
+  render() {
+    return (<Typing>
+      <div>
+      There will be a 1000ms delay here,
+      <Typing.Delay ms={1000} />
+      then this will be typed.
+    </div>
+    </Typing>);
+  }
 }
 
 
