@@ -6,7 +6,7 @@ import Typing, { Backspace, Delay, Reset, Speed } from 'react-typing-animation';
 import collage from '../images/collage3.png';
 import mic from '../images/mic.png';
 import scuba from '../images/scuba_image.JPG';
-
+import without_background from '../images/crop_full_without_background.png';
 
 //https://colorlib.com/wp/template/me/
 //https://colorlib.com/wp/cat/personal/
@@ -27,6 +27,7 @@ class FullDesign extends Component {
     return (<div>
       <Menu />
       <FirstArea />
+      <SecondArea />
     </div>);
   }
 
@@ -84,7 +85,7 @@ class FirstArea extends Component {
 
   render() {
   	return (<div className="self-intro-div">
-  		<div className="col-sm-5 col-xs-12 animated-text">
+  		<div className="col-sm-6 col-xs-12 animated-text">
         <h1 className="hello-text" align="center">
           Hey There, I'm D S Aman
         </h1>
@@ -93,9 +94,10 @@ class FirstArea extends Component {
     			<TypingAnimation />
         </h2>
   		</div>
-      <div className="col-sm-7 col-xs-12 image-div">
+      <div className="col-sm-5 col-xs-12 image-div">
         <ImageDiv />
       </div>
+      <div className="clearfix"></div>
   	</div>);
   }
 }
@@ -115,12 +117,12 @@ class ImageDiv extends Component {
   render() {
     return (
       <div>
-        <img src={collage} className="collage-image"/>
+        <img src={without_background} className="collage-image"/>
     </div>);
   }
 }
 // <img src={mic} className="mic-image"/>
-
+// <img src={collage} className="collage-image"/>
 
 class TypingAnimation extends Component {
 
@@ -148,6 +150,61 @@ class TypingAnimation extends Component {
       A Teacher
     </div>
     </Typing>);
+  }
+}
+
+
+class SecondArea extends Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount(){
+      
+  }
+
+
+  render() {
+    return (<div className="what-i-do-div">
+      <div className="col-sm-12 col-xs-12 main-div-title">
+        What I Do
+      </div>
+      <div className="col-sm-12 col-xs-12">
+        <div className="col-sm-3 col-xs-12 what-i-do-box">
+          <span className="what-i-do-box-title">
+            I Build Things
+          </span>
+          <span className="what-i-do-box-text">
+            I am a Serial Entrepreneur who has built multiple startups since my college days. Currently, am building HighApe - India's biggest experience discovery platform.
+          </span>
+        </div>
+        <div className="col-sm-3 col-xs-12 what-i-do-box">
+          <span className="what-i-do-box-title">
+            I Code Like Crazy
+          </span>
+          <span className="what-i-do-box-text">
+            I was fascinated with playing computer games in my childhood, a fascination which later transitioned into me building games instead of playing one. Today, I have worked on multiple languages, frameworks, databases.
+          </span>
+        </div>
+        <div className="col-sm-3 col-xs-12 what-i-do-box">
+          <span className="what-i-do-box-title">
+            I Like To Write
+          </span>
+          <span className="what-i-do-box-text">
+            I write poems, tech articles, motivational posts, op-eds and more on different online websites, Medium & LinkedIn.
+          </span>
+        </div>
+        <div className="col-sm-3 col-xs-12 what-i-do-box">
+          <span className="what-i-do-box-title">
+            I Teach
+          </span>
+          <span className="what-i-do-box-text">
+            I have always believed that teaching is the best way to give back to the society. There is no power greater than the power of Knowledge. Currently, I do my best to teach Coding to as many school kids as possible from around the world.
+          </span>
+        </div>
+      </div>
+    </div>);
   }
 }
 
