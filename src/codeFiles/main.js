@@ -64,7 +64,7 @@ class Menu extends Component {
         <div className="topnav">
           <a href="#news">Know Me A Little</a>
           <a href="#contact">What I Do</a>
-          <a href="#home" className="active">Home</a>
+          <a href="#home" className="active">Me</a>
           <a href="#search">Things I Write</a>
           <a href="#about">Get In Touch</a>
         </div>
