@@ -1,3 +1,10 @@
+/* Ghost css detector
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+*/
 body {
   margin: 0;
   font-family: "Open Sans";
@@ -161,6 +168,9 @@ code {
   }
 }
 
+.padding-top {
+  padding-top: 60px 
+}
 
 .animated-words {
   display: inline-block;
@@ -185,11 +195,11 @@ code {
 
 .what-i-do-div {
   padding-top: 30px;
-  padding-bottom: 60px;
 }
 
 .what-i-do-main-div {
   padding-left: 0px;
+  padding-right: 0px;
 }
 
 @media (min-width: 768px) {
@@ -237,10 +247,6 @@ code {
 
 .social-media-icon {
   width: 30px;
-}
-
-.get-in-touch-div {
-  padding-bottom: 60px;
 }
 
 
@@ -298,14 +304,11 @@ code {
   padding-bottom: 50px;
 }
 
-.things-i-write-div {
-  padding-bottom: 60px;
-}
-
 .blog-show-div {
   border: 1px solid #a7a7a7;
   padding-left: 0px;
   margin-top: 20px;
+  padding-right: 0px;
 }
 
 .blog-img-div {
@@ -340,12 +343,10 @@ code {
   }
 }
 
-.copyright-div {
-  margin-bottom: 20px;
-}
 
 .footer-text {
   text-align: center;
   font-size: 10px;
+  margin-bottom: 20px;
 }
 

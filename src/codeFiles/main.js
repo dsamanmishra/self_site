@@ -38,6 +38,9 @@ class FullDesign extends Component {
       <Menu />
       <ImgAndAnimation />
       <WhatIDo />
+      <ThingsIWrite />
+      <GetInTouch />
+      <CopyrightDiv />
     </div>);
   }
 
@@ -180,7 +183,7 @@ class WhatIDo extends Component {
 
 
   render() {
-    return (<div id="whatido" className="row what-i-do-div">
+    return (<div id="whatido" className="what-i-do-div">
       <div className="col-sm-12 col-xs-12 main-div-title">
         What I Do
       </div>
@@ -236,8 +239,8 @@ class ThingsIWrite extends Component {
 
 
   render() {
-    return (<div id="thingsiwrite" className="row things-i-write-div">
-      <div className="col-sm-12 col-xs-12 main-div-title">
+    return (<div id="thingsiwrite" className="things-i-write-div">
+      <div className="col-sm-12 col-xs-12 main-div-title padding-top">
         Things I Write
       </div>
       <div className="blogs-main-div">
@@ -335,8 +338,8 @@ class GetInTouch extends Component {
 
 
   render() {
-    return (<div id="getintouch" className="row get-in-touch-div">
-      <div className="col-sm-12 col-xs-12 main-div-title">
+    return (<div id="getintouch" className="get-in-touch-div">
+      <div className="col-sm-12 col-xs-12 main-div-title padding-top">
         Get In Touch
       </div>
       <div className="col-sm-8 col-sm-offset-2 col-xs-12 social-icons-main-div">
@@ -377,8 +380,8 @@ class CopyrightDiv extends Component {
 
 
   render() {
-    return (<div className="row copyright-div">
-      <div className="col-sm-12 col-xs-12 footer-text">
+    return (<div className="copyright-div">
+      <div className="col-sm-12 col-xs-12 footer-text padding-top">
         © 2020 | Made with Self Love For D S Aman :)
       </div>
     </div>);
