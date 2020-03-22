@@ -116,32 +116,54 @@ code {
 
 /** image animation ends **/
 
-.collage-image {
-  max-width: 100%;
+
+@media (min-width: 768px) {
+  .self-intro-div {
+    display: flex;
+    background-color: #dcdcdc;
+    padding-top: 40px;
+  }
+
+  .break {
+    flex-basis: 100%;
+    height: 0;
+    width: 0;
+  }
+
+  .animated-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .my-image {
+    max-width: 100%;
+  }
 }
 
-.self-intro-div {
-  display: flex;
-  background-color: #dcdcdc;
-  padding-top: 40px;
+@media (max-width: 768px) {
+  .self-intro-div {
+    background-color: #dcdcdc;
+    padding-top: 80px;
+  }
+
+  .animated-text {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .my-image {
+    max-width: 100%;
+    padding-top: 50px;
+  }
 }
 
-.animated-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-}
 
 .animated-words {
   display: inline-block;
-}
-
-.break {
-  flex-basis: 100%;
-  height: 0;
-  width: 0;
 }
 
 .hello-text {

@@ -38,9 +38,6 @@ class FullDesign extends Component {
       <Menu />
       <ImgAndAnimation />
       <WhatIDo />
-      <ThingsIWrite />
-      <GetInTouch />
-      <CopyrightDiv />
     </div>);
   }
 
@@ -100,10 +97,10 @@ class ImgAndAnimation extends Component {
   render() {
   	return (<div id="knowmelittle" className="self-intro-div">
   		<div className="col-sm-6 col-xs-12 animated-text">
-        <h1 className="hello-text" align="center">
+        <h1 className="hello-text">
           Hey There, I'm D S Aman
         </h1>
-        <div class="break"></div>
+        <div className="break"></div>
         <h2 className="changing-text">
     			<TypingAnimation />
         </h2>
@@ -131,7 +128,7 @@ class ImageDiv extends Component {
   render() {
     return (
       <div>
-        <img src={without_background} className="collage-image"/>
+        <img src={without_background} className="my-image"/>
     </div>);
   }
 }
