@@ -35,8 +35,8 @@ class FullDesign extends Component {
   render() {
     return (<div>
       <Menu />
-      <FirstArea />
-      <SecondArea />
+      <ImgAndAnimation />
+      <WhatIDo />
       <ThingsIWrite />
       <GetInTouch />
       <CopyrightDiv />
@@ -84,7 +84,7 @@ class Menu extends Component {
 }
 
 
-class FirstArea extends Component {
+class ImgAndAnimation extends Component {
 
   constructor(props) {
   	super(props);
@@ -166,7 +166,7 @@ class TypingAnimation extends Component {
 }
 
 
-class SecondArea extends Component {
+class WhatIDo extends Component {
 
   constructor(props) {
     super(props);
