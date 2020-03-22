@@ -23,15 +23,6 @@ import medium from '../images/medium.png';
 
 class FullDesign extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount(){
-      
-  }
-
-
   render() {
     return (<div>
       <Menu />
@@ -48,15 +39,6 @@ class FullDesign extends Component {
 
 
 class Menu extends Component {
-
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount(){
-      
-  }
-
 
   render() {
     return (
@@ -87,14 +69,6 @@ class Menu extends Component {
 
 class ImgAndAnimation extends Component {
 
-  constructor(props) {
-  	super(props);
-  }
-
-  componentDidMount(){
-  		
-  }
-
 
   render() {
   	return (<div id="knowmelittle" className="self-intro-div">
@@ -118,14 +92,6 @@ class ImgAndAnimation extends Component {
 
 class ImageDiv extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount(){
-      
-  }
-
 
   render() {
     return (
@@ -138,14 +104,6 @@ class ImageDiv extends Component {
 // <img src={collage} className="collage-image"/>
 
 class TypingAnimation extends Component {
-
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount(){
-      
-  }
 
 
   render() {
@@ -171,14 +129,6 @@ class TypingAnimation extends Component {
 
 
 class WhatIDo extends Component {
-
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount(){
-      
-  }
 
 
   render() {
@@ -228,14 +178,6 @@ class WhatIDo extends Component {
 
 class ThingsIWrite extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount(){
-      
-  }
-
 
   render() {
     return (<div id="thingsiwrite" className="things-i-write-div">
@@ -244,7 +186,7 @@ class ThingsIWrite extends Component {
       </div>
       <div className="blogs-main-div">
         <div className="col-sm-12 col-xs-12 medium-blogs">
-          <a href="https://medium.com/highape-tech/what-if-reactjs-component-methods-were-hindu-gods-60abf3b4e911" target="_blank">
+          <a href="https://medium.com/highape-tech/what-if-reactjs-component-methods-were-hindu-gods-60abf3b4e911" target="_blank" rel="noopener noreferrer">
             <div className="blog-area-width col-sm-offset-1 col-xs-12 blog-show-div">
               <div className="col-sm-4 col-xs-4 blog-img-div">
                 <img src={react} alt="React JS and Hindu Gods" className="blog-img" />
@@ -260,7 +202,7 @@ class ThingsIWrite extends Component {
             </div>
           </a>
           <div className="col-sm-1"></div>
-          <a href="https://medium.com/highape-tech/nih-syndrome-in-indian-tech-startups-will-it-ever-be-cured-c799b4bb90b2" target="_blank">
+          <a href="https://medium.com/highape-tech/nih-syndrome-in-indian-tech-startups-will-it-ever-be-cured-c799b4bb90b2" target="_blank" rel="noopener noreferrer">
             <div className="blog-area-width col-xs-12 blog-show-div">
               <div className="col-sm-4 col-xs-4 blog-img-div">
                 <img src={nih} alt="NIH in Indian Startups" className="blog-img" />
@@ -277,11 +219,11 @@ class ThingsIWrite extends Component {
           </a>
           <div className="clearfix"></div>
           <div className="col-sm-11 col-xs-12 blog-footer-read-more">
-            <a href="https://medium.com/@dsaman" target="_blank">Read More on Medium</a>
+            <a href="https://medium.com/@dsaman" target="_blank" rel="noopener noreferrer">Read More on Medium</a>
           </div>
         </div>
         <div className="col-sm-12 col-xs-12 linkedin-blogs">
-          <a href="https://www.linkedin.com/posts/dsamanmishra_mythoughts-entrepreneur-writer-activity-6637943219202162688-ah8p" target="_blank">
+          <a href="https://www.linkedin.com/posts/dsamanmishra_mythoughts-entrepreneur-writer-activity-6637943219202162688-ah8p" target="_blank" rel="noopener noreferrer">
             <div className="blog-area-width col-sm-offset-1 col-xs-12 blog-show-div">
               <div className="col-sm-4 col-xs-4 blog-img-div">
                 <img src={shaka} alt="Shaka Laka Boom Boom" className="blog-img" />
@@ -297,7 +239,7 @@ class ThingsIWrite extends Component {
             </div>
           </a>
           <div className="col-sm-1"></div>
-          <a href="https://www.linkedin.com/posts/dsamanmishra_entrepreneur-mythoughts-startups-activity-6628529863714275329-UNR4" target="_blank">
+          <a href="https://www.linkedin.com/posts/dsamanmishra_entrepreneur-mythoughts-startups-activity-6628529863714275329-UNR4" target="_blank" rel="noopener noreferrer">
             <div className="blog-area-width col-xs-12 blog-show-div">
               <div className="col-sm-4 col-xs-4 blog-img-div">
                 <img src={girl} alt="girl in cafe" className="blog-img" />
@@ -314,7 +256,7 @@ class ThingsIWrite extends Component {
           </a>
           <div className="clearfix"></div>
           <div className="col-sm-11 col-xs-12 blog-footer-read-more">
-            <a href="https://www.linkedin.com/in/dsamanmishra/detail/recent-activity/shares/" target="_blank">Read More on LinkedIn</a>
+            <a href="https://www.linkedin.com/in/dsamanmishra/detail/recent-activity/shares/" target="_blank" rel="noopener noreferrer">Read More on LinkedIn</a>
           </div>
         </div>
       </div>
@@ -327,14 +269,6 @@ class ThingsIWrite extends Component {
 
 class GetInTouch extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount(){
-      
-  }
-
 
   render() {
     return (<div id="getintouch" className="get-in-touch-div">
@@ -343,22 +277,22 @@ class GetInTouch extends Component {
       </div>
       <div className="col-sm-8 col-sm-offset-2 col-xs-12 social-icons-main-div">
         <div className="col-sm-3 col-xs-3 social-icon-div">
-          <a href="https://www.facebook.com/dsamanmishra" target="_blank">
+          <a href="https://www.facebook.com/dsamanmishra" target="_blank" rel="noopener noreferrer">
             <img src={facebook} alt="Facebook Icon" className="social-media-icon" />
           </a>
         </div>
         <div className="col-sm-3 col-xs-3 social-icon-div">
-          <a href="https://www.linkedin.com/in/dsamanmishra/" target="_blank">
+          <a href="https://www.linkedin.com/in/dsamanmishra/" target="_blank" rel="noopener noreferrer">
             <img src={linkedin} alt="LinkedIn Icon" className="social-media-icon" />
           </a>
         </div>
         <div className="col-sm-3 col-xs-3 social-icon-div">
-          <a href="https://medium.com/@dsaman" target="_blank">
+          <a href="https://medium.com/@dsaman" target="_blank" rel="noopener noreferrer">
             <img src={medium} alt="Medium Icon" className="social-media-icon" />
           </a>
         </div>
         <div className="col-sm-3 col-xs-3 social-icon-div">
-          <a href="https://github.com/dsamanmishra" target="_blank">
+          <a href="https://github.com/dsamanmishra" target="_blank" rel="noopener noreferrer">
             <img src={github} alt="GitHub Icon" className="social-media-icon" />
           </a>
         </div>
@@ -369,14 +303,6 @@ class GetInTouch extends Component {
 
 
 class CopyrightDiv extends Component {
-
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount(){
-  }
-
 
   render() {
     return (<div className="copyright-div">
