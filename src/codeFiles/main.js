@@ -62,11 +62,11 @@ class Menu extends Component {
     return (
       <div>
         <div className="topnav">
-          <a href="#news">Know Me A Little</a>
-          <a href="#contact">What I Do</a>
-          <a href="#home" className="active">Me</a>
-          <a href="#search">Things I Write</a>
-          <a href="#about">Get In Touch</a>
+          <a href="#knowmelittle">Know Me A Little</a>
+          <a href="#whatido">What I Do</a>
+          <a href="/" className="active">Me</a>
+          <a href="#thingsiwrite">Things I Write</a>
+          <a href="#getintouch">Get In Touch</a>
         </div>
     </div>);
   }
@@ -96,7 +96,7 @@ class ImgAndAnimation extends Component {
 
 
   render() {
-  	return (<div className="self-intro-div">
+  	return (<div id="knowmelittle" className="self-intro-div">
   		<div className="col-sm-6 col-xs-12 animated-text">
         <h1 className="hello-text" align="center">
           Hey There, I'm D S Aman
@@ -178,7 +178,7 @@ class WhatIDo extends Component {
 
 
   render() {
-    return (<div className="row what-i-do-div">
+    return (<div id="whatido" className="row what-i-do-div">
       <div className="col-sm-12 col-xs-12 main-div-title">
         What I Do
       </div>
@@ -234,7 +234,7 @@ class ThingsIWrite extends Component {
 
 
   render() {
-    return (<div className="row things-i-write-div">
+    return (<div id="thingsiwrite" className="row things-i-write-div">
       <div className="col-sm-12 col-xs-12 main-div-title">
         Things I Write
       </div>
@@ -333,7 +333,7 @@ class GetInTouch extends Component {
 
 
   render() {
-    return (<div className="row get-in-touch-div">
+    return (<div id="getintouch" className="row get-in-touch-div">
       <div className="col-sm-12 col-xs-12 main-div-title">
         Get In Touch
       </div>
