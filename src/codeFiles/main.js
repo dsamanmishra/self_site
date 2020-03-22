@@ -339,22 +339,22 @@ class GetInTouch extends Component {
       </div>
       <div className="col-sm-8 col-sm-offset-2 col-xs-12 social-icons-main-div">
         <div className="col-sm-3 col-xs-3 social-icon-div">
-          <a href="" target="_blank">
+          <a href="https://www.facebook.com/dsamanmishra" target="_blank">
             <img src={facebook} className="social-media-icon" />
           </a>
         </div>
         <div className="col-sm-3 col-xs-3 social-icon-div">
-          <a href="" target="_blank">
+          <a href="https://www.linkedin.com/in/dsamanmishra/" target="_blank">
             <img src={linkedin} className="social-media-icon" />
           </a>
         </div>
         <div className="col-sm-3 col-xs-3 social-icon-div">
-          <a href="" target="_blank">
+          <a href="https://medium.com/@dsaman" target="_blank">
             <img src={medium} className="social-media-icon" />
           </a>
         </div>
         <div className="col-sm-3 col-xs-3 social-icon-div">
-          <a href="" target="_blank">
+          <a href="https://github.com/dsamanmishra" target="_blank">
             <img src={github} className="social-media-icon" />
           </a>
         </div>
