@@ -56,50 +56,41 @@ code {
 @media screen and (max-width: 600px) {
   .topnav {
     overflow: hidden;
-    background-color: #000;
-    position: fixed;
     top: 0;
     z-index: 100;
-    height: 50px;
   }
 
   .topnav a {
-    color: white;
+    color: #000;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
   }
   
-  .topnav a.icon {
-    background: black;
+ .menu-icon {
     display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav-centered a {
-    position: relative;
-    top: 0;
+    position: fixed;
     left: 0;
-    transform: none;
+    top: 0;
   }
 
   .navlinks {
     display: none;
+    padding-top: 30px;
+    text-align: center;
   }
 
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    color: #207561;
   }
 
   /* Style the active link (or home/logo) */
   .active {
-    background-color: #4CAF50;
-    color: white;
+    color: #207561 !important;
+    font-weight: 600;
+    font-size: 21px;
   }
 }
 
