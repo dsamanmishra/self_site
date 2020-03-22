@@ -3,10 +3,11 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Typing, { Backspace, Delay, Reset, Speed } from 'react-typing-animation';
-import collage from '../images/collage3.png';
-import mic from '../images/mic.png';
-import scuba from '../images/scuba_image.JPG';
+//import collage from '../images/collage3.png';
+//import mic from '../images/mic.png';
+//import scuba from '../images/scuba_image.JPG';
 import without_background from '../images/crop_full_without_background.png';
+import menu from '../images/menu.png';
 
 import react from '../images/react.png';
 import nih from '../images/nih.jpeg';
@@ -62,24 +63,25 @@ class Menu extends Component {
     return (
       <div>
         <div className="topnav">
-          <a href="#knowmelittle">Know Me A Little</a>
-          <a href="#whatido">What I Do</a>
-          <a href="/" className="active">Me</a>
-          <a href="#thingsiwrite">Things I Write</a>
-          <a href="#getintouch">Get In Touch</a>
+          <div id="navlinks" className="navlinks">
+            <a href="#knowmelittle">Know Me A Little</a>
+            <a href="#whatido">What I Do</a>
+            <a href="/" className="active">Me</a>
+            <a href="#thingsiwrite">Things I Write</a>
+            <a href="#getintouch">Get In Touch</a>
+          </div>
+          <img src={menu} className="menu-icon" onClick={this.navigationClick}/>
         </div>
     </div>);
   }
-
+//<a href="javascript:void(0);" className="icon" onclick="navigationClick">
   navigationClick(){
-    var x = document.getElementById("myTopnav");
-    /*
-    if (x.className === "topnav") {
-      x.className += " responsive";
+    var x = document.getElementById("navlinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
     } else {
-      x.className = "topnav";
+      x.style.display = "block";
     }
-    */
   }
 }
 
