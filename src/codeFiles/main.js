@@ -1,8 +1,7 @@
 //set some type of token for confirmation page as well so that user can open it infinite times
 
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import Typing, { Backspace, Delay, Reset, Speed } from 'react-typing-animation';
+import Typing, { Backspace } from 'react-typing-animation';
 //import collage from '../images/collage3.png';
 //import mic from '../images/mic.png';
 //import scuba from '../images/scuba_image.JPG';
