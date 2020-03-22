@@ -39,6 +39,7 @@ class FullDesign extends Component {
       <SecondArea />
       <ThingsIWrite />
       <GetInTouch />
+      <CopyrightDiv />
     </div>);
   }
 
@@ -338,17 +339,45 @@ class GetInTouch extends Component {
       </div>
       <div className="col-sm-8 col-sm-offset-2 col-xs-12 social-icons-main-div">
         <div className="col-sm-3 col-xs-3 social-icon-div">
-          <img src={facebook} className="social-media-icon" />
+          <a href="" target="_blank">
+            <img src={facebook} className="social-media-icon" />
+          </a>
         </div>
         <div className="col-sm-3 col-xs-3 social-icon-div">
-          <img src={linkedin} className="social-media-icon" />
+          <a href="" target="_blank">
+            <img src={linkedin} className="social-media-icon" />
+          </a>
         </div>
         <div className="col-sm-3 col-xs-3 social-icon-div">
-          <img src={medium} className="social-media-icon" />
+          <a href="" target="_blank">
+            <img src={medium} className="social-media-icon" />
+          </a>
         </div>
         <div className="col-sm-3 col-xs-3 social-icon-div">
-          <img src={github} className="social-media-icon" />
+          <a href="" target="_blank">
+            <img src={github} className="social-media-icon" />
+          </a>
         </div>
+      </div>
+    </div>);
+  }
+}
+
+
+class CopyrightDiv extends Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount(){
+  }
+
+
+  render() {
+    return (<div className="row copyright-div">
+      <div className="col-sm-12 col-xs-12 footer-text">
+        © 2020 | Made with Self Love For D S Aman :)
       </div>
     </div>);
   }
