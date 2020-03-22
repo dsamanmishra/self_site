@@ -146,10 +146,12 @@ code {
 
 .hello-text {
   color: #2d2d2d;
+  font-weight: 600;
 }
 
 .changing-text {
-  color: #2d2d2d;
+  color: #207561;
+  font-weight: 600;
 }
 
 .main-div-title {

@@ -74,7 +74,7 @@ class Menu extends Component {
         </div>
     </div>);
   }
-//<a href="javascript:void(0);" className="icon" onclick="navigationClick">
+
   navigationClick(){
     var x = document.getElementById("navlinks");
     if (x.style.display === "block") {
@@ -150,7 +150,7 @@ class TypingAnimation extends Component {
 
 
   render() {
-    return (<Typing className="animated-words">
+    return (<Typing className="animated-words" loop={true}>
     <div>
       An Entrepreneuer
       <Backspace count={16} delay={750} />
@@ -162,6 +162,9 @@ class TypingAnimation extends Component {
       <Backspace count={9} delay={750} />
       <Typing.Delay ms={500} />
       A Teacher
+      <Backspace count={9} delay={750} />
+      <Typing.Delay ms={500} />
+      <Typing.Reset delay={1} />
     </div>
     </Typing>);
   }
