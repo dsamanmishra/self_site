@@ -69,7 +69,7 @@ class Menu extends Component {
             <a href="#thingsiwrite">Things I Write</a>
             <a href="#getintouch">Get In Touch</a>
           </div>
-          <img src={menu} className="menu-icon" onClick={this.navigationClick}/>
+          <img src={menu} className="menu-icon" alt="Menu Icon" onClick={this.navigationClick}/>
         </div>
     </div>);
   }
@@ -130,7 +130,7 @@ class ImageDiv extends Component {
   render() {
     return (
       <div>
-        <img src={without_background} className="my-image"/>
+        <img src={without_background} alt="D S Aman holding mic" className="my-image"/>
     </div>);
   }
 }
@@ -247,7 +247,7 @@ class ThingsIWrite extends Component {
           <a href="https://medium.com/highape-tech/what-if-reactjs-component-methods-were-hindu-gods-60abf3b4e911" target="_blank">
             <div className="blog-area-width col-sm-offset-1 col-xs-12 blog-show-div">
               <div className="col-sm-4 col-xs-4 blog-img-div">
-                <img src={react} className="blog-img" />
+                <img src={react} alt="React JS and Hindu Gods" className="blog-img" />
               </div>
               <div className="col-sm-8 col-xs-8 blog-text">
                 <div className="col-sm-12 col-xs-12 blog-title">
@@ -263,7 +263,7 @@ class ThingsIWrite extends Component {
           <a href="https://medium.com/highape-tech/nih-syndrome-in-indian-tech-startups-will-it-ever-be-cured-c799b4bb90b2" target="_blank">
             <div className="blog-area-width col-xs-12 blog-show-div">
               <div className="col-sm-4 col-xs-4 blog-img-div">
-                <img src={nih} className="blog-img" />
+                <img src={nih} alt="NIH in Indian Startups" className="blog-img" />
               </div>
               <div className="col-sm-8 col-xs-8 blog-text">
                 <div className="col-sm-12 col-xs-12 blog-title">
@@ -284,7 +284,7 @@ class ThingsIWrite extends Component {
           <a href="https://www.linkedin.com/posts/dsamanmishra_mythoughts-entrepreneur-writer-activity-6637943219202162688-ah8p" target="_blank">
             <div className="blog-area-width col-sm-offset-1 col-xs-12 blog-show-div">
               <div className="col-sm-4 col-xs-4 blog-img-div">
-                <img src={shaka} className="blog-img" />
+                <img src={shaka} alt="Shaka Laka Boom Boom" className="blog-img" />
               </div>
               <div className="col-sm-8 col-xs-8 blog-text">
                 <div className="col-sm-12 col-xs-12 blog-title">
@@ -300,7 +300,7 @@ class ThingsIWrite extends Component {
           <a href="https://www.linkedin.com/posts/dsamanmishra_entrepreneur-mythoughts-startups-activity-6628529863714275329-UNR4" target="_blank">
             <div className="blog-area-width col-xs-12 blog-show-div">
               <div className="col-sm-4 col-xs-4 blog-img-div">
-                <img src={girl} className="blog-img" />
+                <img src={girl} alt="girl in cafe" className="blog-img" />
               </div>
               <div className="col-sm-8 col-xs-8 blog-text">
                 <div className="col-sm-12 col-xs-12 blog-title">
@@ -344,22 +344,22 @@ class GetInTouch extends Component {
       <div className="col-sm-8 col-sm-offset-2 col-xs-12 social-icons-main-div">
         <div className="col-sm-3 col-xs-3 social-icon-div">
           <a href="https://www.facebook.com/dsamanmishra" target="_blank">
-            <img src={facebook} className="social-media-icon" />
+            <img src={facebook} alt="Facebook Icon" className="social-media-icon" />
           </a>
         </div>
         <div className="col-sm-3 col-xs-3 social-icon-div">
           <a href="https://www.linkedin.com/in/dsamanmishra/" target="_blank">
-            <img src={linkedin} className="social-media-icon" />
+            <img src={linkedin} alt="LinkedIn Icon" className="social-media-icon" />
           </a>
         </div>
         <div className="col-sm-3 col-xs-3 social-icon-div">
           <a href="https://medium.com/@dsaman" target="_blank">
-            <img src={medium} className="social-media-icon" />
+            <img src={medium} alt="Medium Icon" className="social-media-icon" />
           </a>
         </div>
         <div className="col-sm-3 col-xs-3 social-icon-div">
           <a href="https://github.com/dsamanmishra" target="_blank">
-            <img src={github} className="social-media-icon" />
+            <img src={github} alt="GitHub Icon" className="social-media-icon" />
           </a>
         </div>
       </div>
